@@ -1,0 +1,15 @@
+Rota (nome todo da url)
+
+recurso ("/alguma coisa/seilá")
+
+Método HTTP:
+Get: buscar uma informação do backend;
+Post: criar uma informação no backend;
+Put: alterar uma informação no backend;
+Delete: deletar uma informação no backend;
+
+
+Tipos de parãmetros
+Query Params: parâmetro nomeados enviados na rota após "?" (Filtros, paginação)
+Route-paramas: Parâmetro utilizados para identificar recursos
+request body:
