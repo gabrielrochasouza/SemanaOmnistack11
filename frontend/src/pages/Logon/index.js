@@ -28,42 +28,33 @@ export default function Logon() {
         }
     }
 
-    return ( <
-        div className = 'logon-container' >
-        <
-        section className = 'form' >
-        <
-        img src = { logoImg }
-        alt = 'Be the Hero' / >
+    return ( <div className = 'logon-container' >
+        <section className = 'form' >
+        <img src = { logoImg } alt = 'Be the Hero' />
 
-        <
-        form onSubmit = { handleLogin } >
-        <
-        h1 > Faça seu Logon < /h1>
+        <form onSubmit = { handleLogin } >
+        <h1 > Faça seu Logon </h1>
 
-        <
-        input placeholder = 'Sua ID'
+        <input placeholder = 'Sua ID'
         value = { id }
-        onChange = { e => setId(e.target.value) }
-        /> <
-        button type = "submit"
+        onChange = { e => setId(e.target.value) }/> 
+        
+        <button type = "submit"
         className = "button" >
-        Entrar < /button>
+        Entrar </button>
 
 
-        <
-        Link className = 'back-link'
+        <Link className = 'back-link'
         to = '/register' >
-        <
-        FiLogIn size = { 16 }
-        color = 'e02041' / >
-        Não tenho cadastro <
-        /Link> <
-        /form> <
-        /section> <
-        img src = { heroesImg }
-        alt = 'Heroes' / >
-        <
-        /div>
+
+        <FiLogIn size = { 16 }
+        color = 'e02041' />
+        
+        Não tenho cadastro </Link> 
+
+        </form> 
+        </section> 
+        <img src = { heroesImg }alt = 'Heroes' />
+        </div>
     )
 }
